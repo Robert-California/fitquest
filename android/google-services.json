@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "963950431682",
+    "project_id": "fitquest-dccc5",
+    "storage_bucket": "fitquest-dccc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963950431682:android:d38066072e04245a811a5b",
+        "android_client_info": {
+          "package_name": "com.example.fitquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963950431682-3u76g1rbcv4c5jb0m6gs9cjh6npvpij9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoVc-j3Sp78YL8HlwVb31Qd6D-kp6uKxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963950431682-3u76g1rbcv4c5jb0m6gs9cjh6npvpij9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
