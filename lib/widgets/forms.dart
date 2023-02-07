@@ -43,19 +43,18 @@ class _CustomFormState extends State<CustomForm>
               hintText: 'Øvelse',
             ),
           ),
-
-          
-        
-      const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-
-          child: TextField( 
-            decoration: InputDecoration(
+     TextField(
+            controller: myController,
+            onChanged: (value) {
+              setState(() {
+                userInput = value;
+              });
+            },
+            decoration: const InputDecoration(
               border: OutlineInputBorder(),
-              hintText: 'KG',
+              hintText: 'Øvelse',
             ),
           ),
-        ),
         ButtonBar(
           children: <Widget>[
             ElevatedButton(
@@ -68,6 +67,7 @@ class _CustomFormState extends State<CustomForm>
             ),
           ]
         ),
+        
         Expanded(
           child: ListView.builder(
             itemCount: exercises.length,
@@ -91,39 +91,7 @@ class _CustomFormState extends State<CustomForm>
   }
 }
 
-class FormState extends ChangeNotifier
-{
-  List<String> exercises = [];
 
-  void addExercise(String exercise) {
-    exercises.add(exercise);
-    notifyListeners();
-  }
-
-  void removeExercise(String exercise) {
-    exercises.remove(exercise);
-    notifyListeners();
-  }
- 
-
-
-  String _exercise = '';
-  String _weight = '';
-
-  String get exercise => _exercise;
-  String get weight => _weight;
-
-  void setExercise(String exercise) {
-    _exercise = exercise;
-    notifyListeners();
-  }
-
-  void setWeight(String weight) {
-    _weight = weight;
-    notifyListeners();
-  }
-
-}
 
 class CustomForm extends StatefulWidget {
 
