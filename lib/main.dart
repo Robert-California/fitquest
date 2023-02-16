@@ -31,20 +31,18 @@ class MyApp extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.blue,
             ),
-            child: Text('Drawer Header'),
+            child: Text('FitQuest'),
           ),
           ListTile(
-            title: const Text('Item 1'),
+            title: const Text('Burntrack'),
             onTap: () {
                  Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const HelloWorld()));
             }
-            
-
           ),
           ListTile(
-            title: const Text('Item 2'),
+            title: const Text('Test'),
             onTap: () {
               Navigator.pop(context);
             },
