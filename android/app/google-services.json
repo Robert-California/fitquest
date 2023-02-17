@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "949937629990",
-    "project_id": "fitquest-8411e",
-    "storage_bucket": "fitquest-8411e.appspot.com"
+    "project_number": "621812526980",
+    "project_id": "fitquest-43cba",
+    "storage_bucket": "fitquest-43cba.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:949937629990:android:ef63d8dd948971caf4efe7",
+        "mobilesdk_app_id": "1:621812526980:android:9a963cf108d1bb764577d1",
         "android_client_info": {
           "package_name": "com.example.fitquest"
         }
       },
       "oauth_client": [
         {
-          "client_id": "949937629990-r2jn6vg99ln2gtt030qaq83ohglbir4m.apps.googleusercontent.com",
+          "client_id": "621812526980-c8tujpudq5oqpvucrimokukf9oin2occ.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB_in5L1CELjvp5uXzuFfUItbQjI17J0Zk"
+          "current_key": "AIzaSyB4fVNpb_YQ-PO0my7mFRbhnWWgf-a-4vI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "949937629990-r2jn6vg99ln2gtt030qaq83ohglbir4m.apps.googleusercontent.com",
+              "client_id": "621812526980-c8tujpudq5oqpvucrimokukf9oin2occ.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

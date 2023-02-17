@@ -44,40 +44,40 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC8kaV1bVOfWzpYAPR8tW7bxKod-9azihs',
-    appId: '1:963950431682:web:4fbaf243aa92de0c811a5b',
-    messagingSenderId: '963950431682',
-    projectId: 'fitquest-dccc5',
-    authDomain: 'fitquest-dccc5.firebaseapp.com',
-    storageBucket: 'fitquest-dccc5.appspot.com',
-    measurementId: 'G-KJG4JLZ76V',
+    apiKey: 'AIzaSyCj92ki2o1W6vk0iZJQyCFQJCbS0SeIYqw',
+    appId: '1:621812526980:web:c09d1fb40b3e9f004577d1',
+    messagingSenderId: '621812526980',
+    projectId: 'fitquest-43cba',
+    authDomain: 'fitquest-43cba.firebaseapp.com',
+    storageBucket: 'fitquest-43cba.appspot.com',
+    measurementId: 'G-10GJL3WBQR',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDoVc-j3Sp78YL8HlwVb31Qd6D-kp6uKxs',
-    appId: '1:963950431682:android:d38066072e04245a811a5b',
-    messagingSenderId: '963950431682',
-    projectId: 'fitquest-dccc5',
-    storageBucket: 'fitquest-dccc5.appspot.com',
+    apiKey: 'AIzaSyB4fVNpb_YQ-PO0my7mFRbhnWWgf-a-4vI',
+    appId: '1:621812526980:android:9a963cf108d1bb764577d1',
+    messagingSenderId: '621812526980',
+    projectId: 'fitquest-43cba',
+    storageBucket: 'fitquest-43cba.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyChF5pM955zfzuC3OHheSEcOh2OBuVbiXU',
-    appId: '1:963950431682:ios:e3696bdd68de7789811a5b',
-    messagingSenderId: '963950431682',
-    projectId: 'fitquest-dccc5',
-    storageBucket: 'fitquest-dccc5.appspot.com',
-    iosClientId: '963950431682-f8hibkl642tn5tm87laedvicikg15ean.apps.googleusercontent.com',
+    apiKey: 'AIzaSyD9YYWcQP_uu7X82o_PjjrRtkZ1_Om4kVI',
+    appId: '1:621812526980:ios:a8b3177a739badfd4577d1',
+    messagingSenderId: '621812526980',
+    projectId: 'fitquest-43cba',
+    storageBucket: 'fitquest-43cba.appspot.com',
+    iosClientId: '621812526980-k5lkpl95kpm1o2l2o3sfq6t63p9sk63j.apps.googleusercontent.com',
     iosBundleId: 'com.example.fitquest',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyChF5pM955zfzuC3OHheSEcOh2OBuVbiXU',
-    appId: '1:963950431682:ios:e3696bdd68de7789811a5b',
-    messagingSenderId: '963950431682',
-    projectId: 'fitquest-dccc5',
-    storageBucket: 'fitquest-dccc5.appspot.com',
-    iosClientId: '963950431682-f8hibkl642tn5tm87laedvicikg15ean.apps.googleusercontent.com',
+    apiKey: 'AIzaSyD9YYWcQP_uu7X82o_PjjrRtkZ1_Om4kVI',
+    appId: '1:621812526980:ios:a8b3177a739badfd4577d1',
+    messagingSenderId: '621812526980',
+    projectId: 'fitquest-43cba',
+    storageBucket: 'fitquest-43cba.appspot.com',
+    iosClientId: '621812526980-k5lkpl95kpm1o2l2o3sfq6t63p9sk63j.apps.googleusercontent.com',
     iosBundleId: 'com.example.fitquest',
   );
 }
