@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
                     child: Text('FitQuest'),
                   ),
                   ListTile(
-                      title: const Text('Burntrack'),
+                      title: const Text('BMR Calculator'),
                       onTap: () {
                         Navigator.push(
                             context,
