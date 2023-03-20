@@ -10,15 +10,28 @@ class HelloWorld extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('BMR Calculator'),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () => Navigator.pop(context),
+        appBar: AppBar(
+          title: const Text('BMR Calculator'),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () => Navigator.pop(context),
+          ),
         ),
-      ),
-      body: const BmrForm(),
-    );
+        body: Column(
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
+                'Basal Stofskifte. BMR refererer til den mængde energi, som kroppen bruger i hvile.',
+                style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueAccent),
+              ),
+            ),
+            const BmrForm(),
+          ],
+        ));
   }
 }
 
@@ -42,7 +55,7 @@ class _BmrFormState extends State<BmrForm> {
   }
 
   double femaleFormula(double weight, double height, double age) {
-    return 65.5 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
+    return 655.1 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
   }
 
   @override
