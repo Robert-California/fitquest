@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 
-
-
 List<String> exercises = [];
 String userExercise = '';
 String userWeight = '';
 
-class _CustomFormState extends State<CustomForm>
-{
+class _CustomFormState extends State<CustomForm> {
   final weightController = TextEditingController();
   final exerciseController = TextEditingController();
   @override
@@ -17,6 +14,7 @@ class _CustomFormState extends State<CustomForm>
     weightController.dispose();
     super.dispose();
   }
+
   void addExercise(String exercise) {
     setState(() {
       exercises.add(exercise);
@@ -28,7 +26,7 @@ class _CustomFormState extends State<CustomForm>
       exercises.remove(exercise);
     });
   }
-  
+
   var exercises = <String>[];
   var weights = <String>[];
   @override
@@ -36,45 +34,41 @@ class _CustomFormState extends State<CustomForm>
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        
-           TextField(
-            controller: exerciseController,
-            onChanged: (value) {
-              setState(() {
-                userExercise = value;
-              });
-            },
-            decoration: const InputDecoration(
-              border: OutlineInputBorder(),
-              hintText: 'Øvelse',
-            ),
+        TextField(
+          controller: exerciseController,
+          onChanged: (value) {
+            setState(() {
+              userExercise = value;
+            });
+          },
+          decoration: const InputDecoration(
+            border: OutlineInputBorder(),
+            hintText: 'Øvelse',
           ),
-     TextField(
-            controller: weightController,
-            onChanged: (value) {
-              setState(() {
-                userWeight = value;
-              });
-            },
-            decoration: const InputDecoration(
-              border: OutlineInputBorder(),
-              hintText: 'KG',
-            ),
-          ),
-        ButtonBar(
-          children: <Widget>[
-            ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  exercises.add(userExercise);
-                  weights.add(userWeight);
-                });
-              },
-              child: const Text('Submit'),
-            ),
-          ]
         ),
-        
+        TextField(
+          controller: weightController,
+          onChanged: (value) {
+            setState(() {
+              userWeight = value;
+            });
+          },
+          decoration: const InputDecoration(
+            border: OutlineInputBorder(),
+            hintText: 'KG',
+          ),
+        ),
+        ButtonBar(children: <Widget>[
+          ElevatedButton(
+            onPressed: () {
+              setState(() {
+                exercises.add(userExercise);
+                weights.add(userWeight);
+              });
+            },
+            child: const Text('Tilføj'),
+          ),
+        ]),
         Expanded(
           child: ListView.builder(
             itemCount: exercises.length,
@@ -98,9 +92,9 @@ class _CustomFormState extends State<CustomForm>
     );
   }
 }
+
 class CustomForm extends StatefulWidget {
   const CustomForm({Key? key}) : super(key: key);
   @override
   State<CustomForm> createState() => _CustomFormState();
-  
 }
